@@ -1,0 +1,128 @@
+
+$theme: rgb(167, 221, 188);
+
+.navbar {
+  padding: 0 20px;
+  position: relative;
+  height: 60px;
+  background-color: $theme;
+
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    h1 {
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        display: block;
+        font-size: 1rem;
+      }
+      .header__upper {
+        margin-left: 5px;
+      }
+    }
+    .navbar__menu {
+      a {
+        
+        .navbar__menu__item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 9rem;
+          padding: 10px 0;
+          text-align: center;
+          font-size: .8rem;
+          font-weight: bolder;
+          color: rgb(65, 63, 63);
+
+          &:hover {
+            background-color: rgba(177, 174, 174, .3);
+          }
+          span {
+            display: block;
+            margin: 0 auto;
+            font-size: .9rem;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+  body.active {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .navbar {
+    .navbar__container {
+      
+    }
+    .header__bars {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%) ;
+      cursor: pointer;
+
+      .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all .3s ease-in-out;
+        background-color: #000;
+        display: block;
+      }
+    }
+
+    #mobile-menu {
+
+      &.active .bar:nth-child(2) {
+          opacity: 0;
+      }
+      &.active .bar:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+      }
+      &.active .bar:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+
+    #navbar__toggle {
+      position: absolute;
+      top: -1000px;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      transition: all .3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      z-index: 99;
+
+      &.active {
+        top: 100%;
+        left: 0;
+        opacity: 1;
+        background-color: $theme;
+      }
+
+      .navbar__menu__item {
+        width: 100vw;
+        height: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navbar {
+    padding: 0 calc((100vw - 1440px) / 2 + 20px);
+  }
+}

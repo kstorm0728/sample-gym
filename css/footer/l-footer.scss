@@ -1,0 +1,30 @@
+$theme: rgb(167, 221, 188);
+$theme-transparent: rgba(167, 221, 188, .4);
+
+footer {
+  background-color: $theme-transparent;
+  padding: 30px 0;
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .footer__container__first-line {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      li {
+        margin: 0 10px 10px;
+        a {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+
+}

@@ -1,0 +1,90 @@
+$theme: rgb(167, 221, 188);
+$theme-transparent: rgba(167, 221, 188, .7);
+@mixin button {
+  border: 1px solid $theme;
+  border-radius: 30px;
+  padding: 8px 0;
+  width: 200px;
+  color: $theme;
+  font-weight: bold;
+  text-align: center;
+  &:hover {
+    background-color: $theme;
+    color: #fff;
+  }
+}
+
+main {
+  .information {
+    margin: 100px 0;
+    padding: 30px 50px;
+    background-color: rgba(196, 192, 192, .3);
+    .information__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .information__container__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        margin-bottom: 30px;
+        h1 {
+          font-size: clamp(1.5rem, 3vw, 3rem);
+        }
+        p {
+          font-size: clamp(1rem, 1.5vw, 1.5rem);
+          margin-bottom: 30px;
+        }
+        .button {
+          @include button;
+        }
+      }
+      .information__container__main {
+        h2 {
+          font-weight: bold;
+          margin-bottom: 30px;
+          text-align: center;
+        }
+        .information__container__main__list {
+          .information__container__main__list__item {
+            margin-bottom: 20px;
+            .date {
+              display: inline-block;
+              width: 6rem;
+            }
+            .category {
+              display: inline-block;
+              width: 5rem;
+              background-color: $theme;
+              text-align: center;
+              margin-right: 10px;
+              font-size: .8rem;
+            }
+            .title {
+              display: inline-block;
+              a {
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    .information {
+      padding: 20px;
+      .information__container {
+        flex-direction: column;
+        .information__container__header {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

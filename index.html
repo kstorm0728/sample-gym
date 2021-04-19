@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grow Gym</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="./css/slick/slick.css">
+  <link rel="stylesheet" href="./css/slick/slick-theme.css">
+  <link rel="stylesheet" href="./css/l-base.css">
+  <link rel="stylesheet" href="./css/about/c-about.css">
+  <link rel="stylesheet" href="./css/footer/l-footer.css">
+  <link rel="stylesheet" href="./css/header/l-header.css">
+  <link rel="stylesheet" href="./css/hero/c-hero.css">
+  <link rel="stylesheet" href="./css/information/c-information.css">
+
+</head>
+<body>
+  <header class="navbar container-fluid">
+    <div class="navbar__container">
+      <a href="#">
+        <h1>G<span class="header__upper">row<span>ym</span></span></h1>
+      </a>
+      <ul class="navbar__menu row m-0" id="navbar__toggle">
+        <a href="#"><li class="navbar__menu__item col">FIND A GYM<span>店舗を探す</span></li></a>
+        <a href="#"><li class="navbar__menu__item col">ABOUT BRAND<span>Grow Gymについて</span></li></a>
+        <a href="#"><li class="navbar__menu__item col">INFORMATION<span>お知らせ</span></li></a>
+        <a href="#"><li class="navbar__menu__item col">FAQ<span>よくあるご質問</span></li></a>
+      </ul>
+    </div>
+    <div class="header__bars" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <ul class="hero__container" id="slick-slide">
+        <li class="slide first-slide">
+          <img src="./img/index/first-slide.jpeg" alt="">
+          <div class="hero__container__inner">
+            <div class="hero__container__inner__content">
+              <h1>あなたのジムを探す</h1>
+              <div class="search-input">
+                <input type="text" placeholder="駅名・路線名・地名・店名で探す">
+                <i class="fas fa-search"></i>
+              </div>
+              <a href="#" class="button">近くのジムを探す</a>
+            </div>
+          </div>
+        </li>
+        <li class="slide second-slide">
+          <img src="./img/index/second-slide.jpeg" alt="">
+          <div class="hero__container__inner">
+            <div class="hero__container__inner__content">
+              <h1>こだわりの設備</h1>
+              <p>全ての人に最適な環境を</p>
+              <a href="#" class="button">設備を見る</a>
+            </div>
+          </div>
+        </li>
+        <li class="slide third-slide">
+          <img src="./img/index/third-slide.jpeg" alt="">
+          <div class="hero__container__inner">
+            <div class="hero__container__inner__content">
+              <h1>経験豊富なスタッフ</h1>
+              <a href="#" class="button">スタッフの詳細</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="information">
+      <div class="information__container">
+        <div class="information__container__header">
+          <h1 class="">INFORMATION</h1>
+          <p class="">お知らせ</p>
+          <a href="#" class="button">全てのお知らせ</a>
+        </div>
+        <div class="information__container__main">
+          <h2>最新情報</h2>
+          <ul class="information__container__main__list">
+            <li class="information__container__main__list__item">
+              <span class="date">2021.03.20</span>
+              <span class="category">ニュース</span>
+              <span class="title"><a href="#">店舗の営業再開について</a></span>
+            </li>
+            <li class="information__container__main__list__item">
+              <span class="date">2021.03.12</span>
+              <span class="category">ニュース</span>
+              <span class="title"><a href="#">緊急事態宣言の延長への対応について</a></span>
+            </li>
+            <li class="information__container__main__list__item">
+              <span class="date">2021.03.08</span>
+              <span class="category">ニュース</span>
+              <span class="title"><a href="#">新店舗のお知らせ</a></span>
+            </li>
+            <li class="information__container__main__list__item">
+              <span class="date">2021.03.05</span>
+              <span class="category">ニュース</span>
+              <span class="title"><a href="#">料金変更について</a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="about__header">
+        <h1>About Grow Gym</h1>
+        <p>Grow Gymの特徴</p>
+      </div>
+      <div class="about__ftrs">
+        <ul class="about__ftrs__list">
+          <li class="about__ftrs__list__item">
+            <img src="./img/about/24hours.jpeg" alt="">
+            <div class="about__ftrs__list__item__header">
+              <p class="title">24時間年中無休</p>
+              <h1 class="en-title">OPEN 24/7<br>ALWAYS OPEN!</h1>
+            </div>
+            <p>Grow Gymはどんなに忙しい方でも大丈夫です。昼夜関係なく、あなたにとって最適な時間をトレーニングに費やすことが可能となります。</p>
+          </li>
+          <li class="about__ftrs__list__item">
+            <img src="./img/about/machine.jpeg" alt="">
+            <div class="about__ftrs__list__item__header">
+              <p class="title">マシンジム特化型</p>
+              <h1 class="en-title">MACHINE-FOCUSED GYM!</h1>
+            </div>
+            <p>マシントレーニングの楽しさは、重さや回数などコンディションの変化を実感できること。効果を実感できる楽しさこそが継続のポイントです。<br>※マシンジム特化型ですが、シャワー室完備ですから安心してください。</p>
+          </li>
+          <li class="about__ftrs__list__item">
+            <img src="./img/about/reasonable.jpeg" alt="">
+            <div class="about__ftrs__list__item__header">
+              <p class="title">お得な月会費</p>
+              <h1 class="en-title">GREAT VALUE<br>FOR MEMBERSHIP!</h1>
+            </div>
+            <p>月会費が高い、安いという単純比較ではなく、その月会費に納得し、満足していただけることを心がけています。安全で快適な施設とジムスタッフによるサポートなど、月会費以上の価値を感じていただけるはずです。</p>
+          </li>
+          <li class="about__ftrs__list__item">
+            <img src="./img/about/any-gym.jpeg" alt="">
+            <div class="about__ftrs__list__item__header">
+              <p class="title">全店舗利用可能</p>
+              <h1 class="en-title">USE ANY GYM<br>YOU LIKE!</h1>
+            </div>
+            <p>Grow Gymは、国内の全店舗すべてをご利用いただけます。家の近くでも、仕事場の近くでも、遠い出張先でも。好きな設備がある店舗を選ぶことだってできます。</p>
+          </li>
+        </ul>
+      </div>
+      <div class="about__footer">
+        <a href="#"><p class="button">選ばれる理由</p></a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <ul class="footer__container__first-line">
+        <li class="first-item"><a href="#">スタッフ募集</a></li>
+        <li class="second-item"><a href="#">本部へのお問い合わせ</a></li>
+        <li class="third-item"><a href="#">サイトポリシー</a></li>
+        <li class="fourth-item"><a href="#">プライバシーポリシー</a></li>
+      </ul>
+      <p>©Grow Gym All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/script.js"></script>   
+</body>
+</html>

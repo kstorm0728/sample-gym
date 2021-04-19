@@ -1,0 +1,131 @@
+main .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+main .about .about__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+main .about .about__header h1 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: bold;
+}
+
+main .about .about__header p {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+main .about .about__ftrs {
+  margin-bottom: 30px;
+}
+
+main .about .about__ftrs .about__ftrs__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .about .about__ftrs .about__ftrs__list .about__ftrs__list__item {
+  padding: 0 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+main .about .about__ftrs .about__ftrs__list .about__ftrs__list__item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: clamp(200px, 25vw, 300px);
+}
+
+main .about .about__ftrs .about__ftrs__list .about__ftrs__list__item .about__ftrs__list__item__header {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #fff;
+}
+
+main .about .about__ftrs .about__ftrs__list .about__ftrs__list__item .about__ftrs__list__item__header p {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  padding: 0;
+}
+
+main .about .about__ftrs .about__ftrs__list .about__ftrs__list__item .about__ftrs__list__item__header h1 {
+  font-size: clamp(2rem, 4vw, 4rem);
+}
+
+main .about .about__ftrs .about__ftrs__list .about__ftrs__list__item p {
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+main .about .about__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .about .about__footer .button {
+  border: 1px solid #a7ddbc;
+  border-radius: 30px;
+  padding: 8px 0;
+  width: 200px;
+  color: #a7ddbc;
+  font-weight: bold;
+  text-align: center;
+}
+
+main .about .about__footer .button:hover {
+  background-color: #a7ddbc;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  main .about .about__ftrs .about__ftrs__list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about .about__ftrs {
+    padding: 0 calc((100vw - 1440px) / 2);
+  }
+}
+/*# sourceMappingURL=c-about.css.map */

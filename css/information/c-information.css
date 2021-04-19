@@ -1,0 +1,107 @@
+main .information {
+  margin: 100px 0;
+  padding: 30px 50px;
+  background-color: rgba(196, 192, 192, 0.3);
+}
+
+main .information .information__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .information .information__container .information__container__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+main .information .information__container .information__container__header h1 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+main .information .information__container .information__container__header p {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  margin-bottom: 30px;
+}
+
+main .information .information__container .information__container__header .button {
+  border: 1px solid #a7ddbc;
+  border-radius: 30px;
+  padding: 8px 0;
+  width: 200px;
+  color: #a7ddbc;
+  font-weight: bold;
+  text-align: center;
+}
+
+main .information .information__container .information__container__header .button:hover {
+  background-color: #a7ddbc;
+  color: #fff;
+}
+
+main .information .information__container .information__container__main h2 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+main .information .information__container .information__container__main .information__container__main__list .information__container__main__list__item {
+  margin-bottom: 20px;
+}
+
+main .information .information__container .information__container__main .information__container__main__list .information__container__main__list__item .date {
+  display: inline-block;
+  width: 6rem;
+}
+
+main .information .information__container .information__container__main .information__container__main__list .information__container__main__list__item .category {
+  display: inline-block;
+  width: 5rem;
+  background-color: #a7ddbc;
+  text-align: center;
+  margin-right: 10px;
+  font-size: .8rem;
+}
+
+main .information .information__container .information__container__main .information__container__main__list .information__container__main__list__item .title {
+  display: inline-block;
+}
+
+main .information .information__container .information__container__main .information__container__main__list .information__container__main__list__item .title a {
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  main .information {
+    padding: 20px;
+  }
+  main .information .information__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .information .information__container .information__container__header {
+    margin-right: 0;
+  }
+}
+/*# sourceMappingURL=c-information.css.map */
